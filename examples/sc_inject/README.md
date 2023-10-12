@@ -1,3 +1,6 @@
+# Fork Update
+__Extremely__ minimal update. Simply edit the main.go file here to include your raw shellcode file. Shellcode file must be a relative path. The `go:embed` directive does not like absolute paths.
+
 # sc_inject
 
 Extremely simple shellcode injector PoC, that injects calc shellcode using syscalls for `NtAllocateVirtualMemory`+`NtWriteVirtualMemory`+`NtCreateThreadEx`.
