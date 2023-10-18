@@ -1,5 +1,9 @@
 # Fork Update
-__Extremely__ minimal update. Simply edit the main.go file here to include your raw shellcode file. Shellcode file must be a relative path. The `go:embed` directive does not like absolute paths.
+__Extremely__ minimal update. Copying and pasting stageless shellcode (especially formatted differently than the typical C/C++ or C# byte array styles) is an absolute nightmare. So, I made use of Golang's ability to embed files.
+
+## How To
+1. Edit main.go and add your raw shellcode file to the `//go:embed` line. Ideally, shellcode file is in the same directory. Otherwise, it can be a relative path to this (inject) directory. It **cannot** be an absolute path.
+2. Copy and paste one of the two below commands to compile the payload. 
 
 # sc_inject
 
